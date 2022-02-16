@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmallHotel</title>
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.ico"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      />
+        <!-- <link rel="stylesheet" href="./sass/utils/_normalize.scss"> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <a class="logo logo--header logo--new" 
+            href="./index.html" 
+            lang="uk">
+            <span class="logo--accent">Small</span>Hotel</a>
+            <button type="button" class="button__open-menu" data-menu-open>
+                <svg class="icon icon__mob-menu">
+            <use href="images/icons.svg#icon-menu"></use>
+            </svg>
+            </button>
+
+        <nav class="navigation">
+    
+                <ul class="navigation__list">
+                    <li><a class="navigation__link navigation__link--current" href="./index.html" >Головна</a></li>
+                    <li><a class="navigation__link" href ="./rooms.html" >Номери</a></li>
+                    <li><a class="navigation__link" href ="#contacts">Контакти</a></li>
+                </ul>
+        </nav>
+
+        <ul class="contacts__list lists">
+            <li class="contacts__item">
+                <a href="mailto:vin@small-hotel.com.ua" class="contacts__link contacts__link-mail">
+                <svg class="contacts__icon icon icon__mail"
+                    width="16"
+                    height="12"><use href="./images/icons.svg#icon-envelope"></use></svg>vin@small-hotel.com.ua</a>
+                                        </li>
+            
+            <li class="contacts__item">
+                <a class="contacts__link contacts__link-tel" 
+                   href="tel:+380939301111">
+                <svg class="contacts__icon icon icon__tel"
+                     width="10"
+                     height="16"><use href="./images/icons.svg#icon-smartphone"></use></svg>+38 093 930 11 11</a>
+                </li>
+        </ul>
+        <div class="dropdown">
+            <div class="dropbtn"></div>
+            <div class="dropdown-content">
+              <a href="./index.html">UA</a>
+              <a href="./en/index.html">EN</a>
+            </div>
+        </div>
+          </div>
+    </header>
+
+    <main>
+        <section class="section hero">
+            <div class="container hero__block">
+            <h1 class="hero__title">Новий тризірковий бізнес-готель у Вінниці</h1>
+            <!-- <button class="button__hero btn" type="button" data-modal-open>Заказать услугу</button> -->
+        </div>
+        </section>
+
+        <section class="feature section">
+            <h2 hidden>Броинрование номеров></h2>
+            <!-- <div class="container">
+        <h2 hidden>О нас</h2>
+            <ul class="feature__list">
+          <li>
+              <div class="feature__iconbox">
+                  <svg class="feature__icon" 
+                  aria-label="антена" 
+                  width="70px" height="70px"><use href="./images/icons.svg#icon-antenna"></use></svg>
+            </div>
+            <h3 class="feature__subtitle">Внимание к деталям</h3>
+            <p class="text__feature">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+        </li>
+
+        <li>
+            <div class="feature__iconbox">
+                <svg class="feature__icon" 
+                aria-label="часы" 
+                width="70px" height="70px"><use href="./images/icons.svg#icon-clock"></use></svg>     
+            </div>
+            <h3 class="feature__subtitle">Пунктуальность</h3>
+            <p class="text__feature">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+        </li>
+
+        <li>
+            <div class="feature__iconbox">
+                <svg class="feature__icon" 
+                aria-label="диаграмма" 
+                width="70px" height="70px"><use href="./images/icons.svg#icon-diagram"></use></svg>  
+            </div>
+            <h3 class="feature__subtitle">Планирование</h3>
+            <p class="text__feature">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+        </li>
+        
+        <li>
+            <div class="feature__iconbox">
+                <svg class="feature__icon" 
+                aria-label="космонавт" 
+                width="70px" height="70px"><use href="./images/icons.svg#icon-astronaut"></use></svg>
+            </div>
+            <h3 class="feature__subtitle">Современные технологии</h3>
+            <p class="text__feature">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+        </li>
+        </ul>
+    </div> -->
+    <div id="ServioContainer"></div><div id="ServioResult"></div>
+    </section>
+
+        <section class="section section--no-padding-top">
+       <div class="container">
+            <h2 class="heading__about">Про готель</h2>
+            <ul class="about__list">
+                <li class="about__item">
+                    <img 
+                    srcset="./images/box1-note-1x.jpg 1x, ./images/box1-note-2x.jpg 2x"
+                    src="./images/box1-note-1x.jpg"
+                    alt="набирает код" width="370">
+                    <p class="about__text">Small hotel – новий тризірковий бізнес-готель у Вінниці. <br>
+                        До послуг гостей – 28 комфортних номерів, укомплектованих за всіма сучасними європейськимы стандартами. 
+                        Стійка рецепції та румсервіс працюють цілодобово.<br> 
+                        Сніданки входять у вартість проживання, подаються з 8:00 до 11:00.<br> 
+                        Час заїзду – з 14:00,
+                        Час виїзду – до 12:00.</p>
+                </li>
+                <li class="about__item">
+                    <img
+                    srcset="./images/box3-note-1aaa.jpg 1x, ./images/box3-note-1aaa.jpg 2x"
+                    src="images/box3-note-1aaa.jpg"
+                    alt="делает дизайн" width="370">
+                    <p class="about__text">Small hotel займає 2 поверхи ТЦ S)mall, що в центрі мікрорайону Вишенка.<br> 
+                        Поруч із нами – зручна транспортна розв’язка, ресторани та кав’ярні, магазини та розважальні заклади. Від нас до центру міста – 5 км, до мультимедійного фонтану «Рошен» – 6,4 км, залізничного вокзалу – 8 км, Західного автовокзалу – 1,8 км. Оптимальний вибір для туристів та бізнес-мандрівників. 
+                        </p>
+                </li>
+                <li class="about__item">
+                    <img 
+                    srcset="./images/box3-note-1x.jpg 1x, ./images/box3-note-2x.jpg 2x"
+                    src="./images/box3-note-1x.jpg"
+                    alt="планшет" width="370">
+                    <p class="about__text">У кожному номері – ліжко з ортопедичним матрацом, окрема ванна кімната з душовою кабіною, безлімітний WiFi, SMART TV, міні-бар та індивідуальний сейф.<br> 
+                        Для гостей готелю, що подорожують автівками, передбачені безкоштовні парко-місця.<br>
+                        Маємо спеціально обладнаний номер для людей з інвалідністю.
+                        </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+       <section class="section section--background-color">
+           <div class="container">
+            <h2 class="heading__team">Номери</h2>
+            <ul class="team__list lists">
+                <li class="card">
+                    <picture class="card__img">
+                    <source srcset="./images/team_card1-note-1x.jpg 1x, ./images/team_card1-note-2x.jpg 2x" 
+                            media="(min-width: 1200px)">
+                    <source srcset="./images/team_card1-tab-1x.jpg 1x, ./images/team_card1-tab-2x.jpg 2x" 
+                            media="(min-width: 768px)">
+                    <source srcset="./images/team_card1-mob-1x.jpg 1x, ./images/team_card1-mob-2x.jpg 2x" 
+                            media="(min-width: 320px)">  
+                    <img src="./images/team_card1-mob-1x.jpg" alt="игорь">           
+                    </picture>
+
+                <div class="card__content">
+                    <h3 class="card__title">Одномісний стандарт</h3>
+                <p class="card__text card__text-single" lang="en">Площа номеру – 22 м2 з односпальним ліжком розміром 120х200 см.<br>
+                    </p>
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a href="" class="social__link">
+                        <svg class="icon__social">
+                        <use href="./images/icons.svg#wi-fi">
+                    </use></svg></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link">
+                            <svg class="icon__social">
+                            <use href="./images/icons.svg#breakfast">
+                        </use></svg></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link">
+                            <svg class="icon__social">
+                            <use href="./images/icons.svg#parking">
+                        </use></svg></a>
+                    </li>
+                </ul>
+                </div>
+                </li>
+
+                <li class="card">
+                    <picture class="card__img">
+                        <source srcset="./images/team_card2-note-1x.jpg 1x, ./images/team_card2-note-2x.jpg 2x" 
+                                media="(min-width: 1200px)">
+                        <source srcset="./images/team_card2-tab-1x.jpg 1x, ./images/team_card2-tab-2x.jpg 2x" 
+                                media="(min-width: 768px)">
+                        <source srcset="./images/team_card2-mob-1x.jpg 1x, ./images/team_card2-mob-2x.jpg 2x" 
+                                media="(min-width: 320px)">  
+                        <img src="./images/team_card2-mob-1x.jpg" alt="Ольга">           
+                        </picture>
+                    <div class="card__content">
+                <h3 class="card__title">Двомісний стандарт</h3>
+                <p class="card__text" lang="en">Номер площею від 22 м2 до 27 м2 з двома роздільними ліжками розміром 120х200 см, або одним великим ліжком розміром 240х200 см.<br>
+                     </p>
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a href="" class="social__link">
+                        <svg class="icon__social">
+                        <use href="./images/icons.svg#wi-fi">
+                    </use></svg></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link">
+                            <svg class="icon__social">
+                            <use href="./images/icons.svg#breakfast">
+                        </use></svg></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link">
+                            <svg class="icon__social">
+                            <use href="./images/icons.svg#parking">
+                        </use></svg></a>
+                    </li>
+                </ul>
+                </div>
+                </li>
+
+                <li class="card">
+                    <picture class="card__img">
+                        <source srcset="./images/team_card3-note-1x.jpg 1x, ./images/team_card3-note-2x.jpg 2x" 
+                                media="(min-width: 1200px)">
+                        <source srcset="./images/team_card3-tab-1x.jpg 1x, ./images/team_card3-tab-2x.jpg 2x" 
+                                media="(min-width: 768px)">
+                        <source srcset="./images/team_card3-mob-1x.jpg 1x, ./images/team_card3-mob-2x.jpg 2x" 
+                                media="(min-width: 320px)">  
+                        <img src="./images/team_card3-mob-1x.jpg" alt="Николай">           
+                        </picture>
+                    <div class="card__content">
+                <h3 class="card__title">Напівлюкс</h3>
+                <p class="card__text card__text-twin" lang="en">Однокімнатний просторий номер площею 42 м2 з великим двоспальним ліжком розміром 240х200 см.<br>
+                     </p>
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a href="" class="social__link">
+                        <svg class="icon__social">
+                        <use href="./images/icons.svg#wi-fi">
+                    </use></svg></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link">
+                            <svg class="icon__social">
+                            <use href="./images/icons.svg#breakfast">
+                        </use></svg></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link">
+                            <svg class="icon__social">
+                            <use href="./images/icons.svg#parking">
+                        </use></svg></a>
+                    </li>
+                </ul>
+                </div>
+                </li>
+
+                <a href="">
+                <li class="card">
+                    <picture class="card__img">
+                        <source srcset="./images/team_card4-note-1x.jpg 1x, ./images/team_card4-note-2x.jpg 2x" 
+                                media="(min-width: 1200px)">
+                        <source srcset="./images/team_card4-tab-1x.jpg 1x, ./images/team_card4-tab-2x.jpg 2x" 
+                                media="(min-width: 768px)">
+                        <source srcset="./images/team_card4-mob-1x.jpg 1x, ./images/team_card4-mob-2x.jpg 2x" 
+                                media="(min-width: 320px)">  
+                        <img src="./images/team_card4-mob-1x.jpg" alt="Михаил">           
+                        </picture>
+                    <div class="card__content">
+                <h3 class="card__title">Люкс</h3>
+                <p class="card__text" lang="en">Просторий двокімнатний номер площею 62 м2 з великим двоспальним ліжком розміром 240х200 см та гостьовою зоною з розкладним диваном.
+                    </p>
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a href="" class="social__link">
+                        <svg class="icon__social">
+                        <use href="./images/icons.svg#wi-fi">
+                    </use></svg></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link">
+                            <svg class="icon__social">
+                            <use href="./images/icons.svg#breakfast">
+                        </use></svg></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link">
+                            <svg class="icon__social">
+                            <use href="./images/icons.svg#parking">
+                        </use></svg></a>
+                    </li>
+                </ul>
+                </div>
+                </li>
+            </a>
+
+            <li class="card">
+    <a href="" class="link__portfolio">
+        <div class="portfolio__aside">  
+            <picture>
+                <source
+                  srcset="./images/project8-note-1x.jpg 1x, ./images/project8-note-2x.jpg 2x"
+                  media="(min-width:1200px)" />
+                <source
+                  srcset="./images/project8-tab-1x.jpg 1x, ./images/project8-tab-2x.jpg 2x"
+                  media="(min-width:768px)" />
+                <source
+                  srcset="./images/project8-mob-1x.jpg 1x, ./images/project8-mob-2x.jpg 2x"
+                  media="(min-width:480px)" />
+                <img src="./images/project8-mob-1x.jpg" alt="работа за ноутбуком"
+              /></picture>
+    <!-- <p class="overlay__text">
+    </p> -->
+</div>
+    <div class="portfolio__content">
+    <!-- <h2 class="portfolio__title"></h2> -->
+    <p class="portfolio__text"></p>
+    <ul class="social__list">
+        <li class="social__item">
+            <a href="" class="social__link">
+            <svg class="icon__social">
+            <use href="./images/icons.svg#wi-fi">
+        </use></svg></a>
+        </li>
+        <li class="social__item">
+            <a href="" class="social__link">
+                <svg class="icon__social">
+                <use href="./images/icons.svg#breakfast">
+            </use></svg></a>
+        </li>
+        <li class="social__item">
+            <a href="" class="social__link">
+                <svg class="icon__social">
+                <use href="./images/icons.svg#parking">
+            </use></svg></a>
+        </li>
+    </ul>
+    </div>
+</a>
+</li>
+
+            </ul>
+            </div>
+       </section>
+
+       <section class="section hero-footer">
+        <div class="container hero__block">
+        <h1 class="hero__title-footer">У вартість проживання наших гостей входять сніданки. Вони подаються щодня з 8:00 до 11:00.<br> Ми щиро турбуємось про кожного гостя, а тому на період карантинних обмежень сніданки подаються індивідуально до кожного номеру.<br> 
+            Для гостей нашого готелю доступна послуга румсервіс, яка працює цілодобово.<br> За спеціальним меню харчування можна замовляти до номеру в будь-який час доби.<br> 
+            Також у кожному номері Small hotel є міні-бар з прохолоджувальними напоями, снеками та смаколиками. Ним можна скористатись за окрему платню.</h1>
+        <!-- <button class="button__hero btn" type="button" data-modal-open>Заказать услугу</button> -->
+    </div>
+    </section>
+<!-- 
+       <section class="section"> 
+        <div class="container">
+        <h2 class="heading__clients">Постоянные клиенты</h2>
+        <ul class="clients__list">
+        <li class="clients__item">
+        <a href="" class="clients__link">
+            <svg class="icon__client" 
+            width="106" height="60">
+            <use href="./images/icons.svg#icon-Logoa"></use>
+            </svg>
+        </a>
+    </li>
+    
+    <li class="clients__item">
+        <a href="" class="clients__link">
+            <svg class="icon__client" 
+            width="106px" height="60px">
+            <use href="./images/icons.svg#icon-Logob"></use>
+            </svg>
+        </a>
+    </li>
+    
+    <li class="clients__item">
+        <a href="" class="clients__link">
+            <svg class="icon__client" 
+            width="106px" height="60px">
+            <use href="./images/icons.svg#icon-Logoc"></use>
+            </svg>
+        </a>
+    </li>
+    
+    <li class="clients__item">
+        <a href="" class="clients__link">
+            <svg class="icon__client" 
+            width="106px" height="60px">
+            <use href="./images/icons.svg#icon-Logod"></use>
+            </svg>
+        </a>
+    </li>
+    
+    <li class="clients__item">
+        <a href="" class="clients__link">
+            <svg class="icon__client" 
+            width="106px" height="60px">
+            <use href="./images/icons.svg#icon-Logoe"></use>
+            </svg>
+        </a>
+    </li>
+    
+    <li class="clients__item">
+        <a href="" class="clients__link">
+            <svg class="icon__client" 
+            width="106px" height="60px">
+            <use href="./images/icons.svg#icon-Logof"></use>
+            </svg>
+        </a>
+    </li>
+    </ul>
+    </div>
+    </section> -->
+    </main>
+
+<footer class="footer" id="contacts">
+    <div class="footer__container container">
+        <div class="footer-tablet">
+        <div class="footer__content">
+            <a class="logo logo--footer" 
+            href="./index.html" 
+            lang="en"><span 
+            class="logo logo--accent">Small</span>Hotel</a>
+
+            <address class="footer-address">
+                <a 
+                class="footer__address" 
+                href="https://www.google.com/maps/place/SMALL+HOTEL/@49.2264652,28.4111106,16z/data=!4m18!1m9!3m8!1s0x0:0x16d8c0dfbfd4c716!2sSMALL+HOTEL!5m2!4m1!1i2!8m2!3d49.226213!4d28.4110248!3m7!1s0x0:0x16d8c0dfbfd4c716!5m2!4m1!1i2!8m2!3d49.226213!4d28.4110248" 
+                target="_blank" 
+                rel="noopener, nofollow, noreferrer"
+                >м.Вінниця, проспект Юності 18</a>
+
+                <ul class="lists">                   
+                    <li class="footer__item">
+                    <a class="footer__link" href="mailto:vin@small-hotel.com.ua"
+                    >vin@small-hotel.com.ua</a></li>
+                    <li class="footer__item">
+                    <a class="footer__link" href="tel:+380939301111"
+                    >+38 093 930 11 11</a></li>
+                </ul>
+            </address>
+        </div>
+    
+        <div class="footer__thumb--social">
+            <p class="footer__text">Слідкуйте за новинами</p>
+            <ul class="lists social__list">
+                <li class="social__item">
+                    <a href="" class="social__link social__link--footer">
+                        <svg class="icon__social">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="" class="social__link social__link--footer">
+                        <svg class="icon__social">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="" class="social__link social__link--footer">
+                        <svg class="icon__social">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div> 
+        </div>
+
+        <div class="subscribe">
+            <form action="rooms.html" class="form__subscribe" name="subscribe-form" >
+                  <!-- <p class="footer__text">подпишитесь на рассылку</p> -->
+                  <div class="subscribe__row">
+                    <!-- <label>
+                        <input type="email" 
+                        name="email" id="subscribe-email" 
+                        class="subscribe__email" 
+                        placeholder="Email"/>
+                      </label> -->
+                      <button class="button__send">Переглянути всі номери
+                    </button>
+                  </div>
+                </form>
+        </div>
+    </div>
+</footer>
+
+<div class="mob-menu is-hidden" data-menu>
+    <div class="mob-menu-container">
+        <div class="mob-menu-nav">
+            <button type="button" class="mob-menu__close-button" data-menu-close>
+                <svg class="icon icon__menu-close">
+                  <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+              <ul class="mob-menu__list lists">
+                <li><a href="./index.html" class="mob-menu__link current-mob">Головна</a></li>
+                <li><a href="./rooms.html" class="mob-menu__link">Номери</a></li>
+                <li><a href="./index.html#contacts" class="mob-menu__link">Контакты</a></li>
+              </ul>
+        </div>
+        
+        <div class="mob-menu-contact">
+            <ul class="mob-menu-contacts lists">
+              <li class="mob-menu-contacts__item">
+                <a href="tel:+380441111111" class="mob-menu-contacts__tel">+38 093 930 11 11</a>
+              </li>
+              <li class="mob-menu-contacts__item">
+                <a href="mailto:info@devstudio.com" class="mob-menu-contacts__mail">
+                 vin@small-hotel.com.ua</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-menu-social lists">
+              <li class="mob-menu-social__item">
+                <a href="https://www.instagram.com/" class="mob-menu-social__link">Instagram</a>
+              </li>
+              <li class="mob-menu-social__item">
+                <a href="https://twitter.com/" class="mob-menu-social__link">Twitter</a>
+              </li>
+              <li class="mob-menu-social__item">
+                <a href="https://www.facebook.com/" class="mob-menu-social__link">Facebook</a>
+              </li>
+              <!-- <li class="mob-menu-social__item">
+                <a href="https://www.linkedin.com/" class="mob-menu-social__link">linkedin</a>
+              </li> -->
+            </ul>
+    </div>
+</div>
+</div>
+
+<!-- <div class="modal__backdrop is-hidden" data-modal>
+    <div class="modal" data-form-modal>
+    <button type="button" class="button__modal" data-modal-close>
+        <svg class="icon__close"> 
+            <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+    </button>
+
+    
+    <form class="modal__form" name="modal__form" autocomplete="on">
+        <p class="modal__heading">Оставьте свои данные, мы вам перезвоним</p>
+        
+        <label class="modal__thumb">
+            <span class="modal__label">Имя</span>
+            <input class="modal__input" type="text" name="order-name" id="order-name"> 
+            <svg class="icon__modal-img">
+             <use href="./images/icons.svg#person"></use>  
+            </svg>       
+        </label>
+
+        <label class="modal__thumb">
+            <span class="modal__label">Телефон</span>
+            <input type="tel" name="order-tel" id="order-tel" class="modal__input"> 
+            <svg class="icon__modal-img" >
+                <use href="./images/icons.svg#icon-phoneblack"></use>  
+               </svg>       
+        </label>
+
+        <label class="modal__thumb">
+            <span class="modal__label">Почта</span>
+            <input type="email" name="order-mail" id="order-mail" class="modal__input">
+            <svg class="icon__modal-img">
+                <use href="./images/icons.svg#icon-emailblack"></use>  
+               </svg>      
+            </label>       
+
+        <label class="modal__thumb">
+            <span class="modal__label">Комментарий</span> 
+            <textarea name="modal-area" id="modal-area" 
+            placeholder="введите текст" class="modal__area"></textarea>
+        </label>
+
+        <label class="modal__thumb">
+            <input type="checkbox" name="modal__policy" id="modal__policy" 
+            class="modal__checkbox-input visually-hidden">
+             <svg class="icon__check modal-check">
+                        <use href="./images/icons.svg#icon-check"></use>
+                    </svg>
+                    <span class="form__agreement"> 
+                    Соглашаюсь с рассылкой и принимаю
+                    <a href="#" class="modal__link">Условия договора</a>
+                    </span>
+                </label>
+            <button type="submit" class="modal-button__btn">Отправить</button>
+    </form>
+    </div>
+</div> -->
+
+<!-- <script src="./js/modal.js"></script> -->
+
+<script src="./js/menu.js"></script>
+<script src="https://sbj.rkz.io/servio-booking.js?module_id=94&lang=ru"></script>
+
+</body>
+</html>
