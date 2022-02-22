@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmallHotel</title>
+    <title>ServioHotel</title>
     <link rel="shortcut icon" type="image/png" href="./images/favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -14,7 +15,7 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       />
-        <!-- <link rel="stylesheet" href="./sass/utils/_normalize.scss"> -->
+        <link rel="stylesheet" href="./sass/utils/_normalize.scss">
     <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
@@ -24,7 +25,7 @@
             <a class="logo logo--header logo--new" 
             href="./index.html" 
             lang="uk">
-            <span class="logo--accent">Small</span>Hotel</a>
+            <span class="logo--accent">Servio</span>Hotel</a>
             <button type="button" class="button__open-menu" data-menu-open>
                 <svg class="icon icon__mob-menu">
             <use href="images/icons.svg#icon-menu"></use>
@@ -45,7 +46,7 @@
                 <a href="mailto:vin@small-hotel.com.ua" class="contacts__link contacts__link-mail">
                 <svg class="contacts__icon icon icon__mail"
                     width="16"
-                    height="12"><use href="./images/icons.svg#icon-envelope"></use></svg>vin@small-hotel.com.ua</a>
+                    height="12"><use href="./images/icons.svg#icon-envelope"></use></svg>sales@servio.com.ua</a>
                                         </li>
             
             <li class="contacts__item">
@@ -70,7 +71,10 @@
         <section class="section hero">
             <div class="container hero__block">
             <h1 class="hero__title">Новий тризірковий бізнес-готель у Вінниці</h1>
-            <!-- <button class="button__hero btn" type="button" data-modal-open>Заказать услугу</button> -->
+            <div class="frame">
+                <button class="custom-btn btn9">More</button>
+            </div>
+            <button class="button__hero btn" type="button" data-modal-open>Зворотній зв'язок</button>
         </div>
         </section>
 
@@ -120,7 +124,9 @@
         </li>
         </ul>
     </div> -->
-    <div id="ServioContainer"></div><div id="ServioResult"></div>
+    <div class="frame">
+        <button class="custom-btn btn9">More</button>
+    </div>
     </section>
 
         <section class="section section--no-padding-top">
@@ -278,7 +284,7 @@
                 </div>
                 </li>
 
-                <a href="">
+                
                 <li class="card">
                     <picture class="card__img">
                         <source srcset="./images/team_card4-note-1x.jpg 1x, ./images/team_card4-note-2x.jpg 2x" 
@@ -315,52 +321,6 @@
                 </ul>
                 </div>
                 </li>
-            </a>
-
-            <li class="card">
-    <a href="" class="link__portfolio">
-        <div class="portfolio__aside">  
-            <picture>
-                <source
-                  srcset="./images/project8-note-1x.jpg 1x, ./images/project8-note-2x.jpg 2x"
-                  media="(min-width:1200px)" />
-                <source
-                  srcset="./images/project8-tab-1x.jpg 1x, ./images/project8-tab-2x.jpg 2x"
-                  media="(min-width:768px)" />
-                <source
-                  srcset="./images/project8-mob-1x.jpg 1x, ./images/project8-mob-2x.jpg 2x"
-                  media="(min-width:480px)" />
-                <img src="./images/project8-mob-1x.jpg" alt="работа за ноутбуком"
-              /></picture>
-    <!-- <p class="overlay__text">
-    </p> -->
-</div>
-    <div class="portfolio__content">
-    <!-- <h2 class="portfolio__title"></h2> -->
-    <p class="portfolio__text"></p>
-    <ul class="social__list">
-        <li class="social__item">
-            <a href="" class="social__link">
-            <svg class="icon__social">
-            <use href="./images/icons.svg#wi-fi">
-        </use></svg></a>
-        </li>
-        <li class="social__item">
-            <a href="" class="social__link">
-                <svg class="icon__social">
-                <use href="./images/icons.svg#breakfast">
-            </use></svg></a>
-        </li>
-        <li class="social__item">
-            <a href="" class="social__link">
-                <svg class="icon__social">
-                <use href="./images/icons.svg#parking">
-            </use></svg></a>
-        </li>
-    </ul>
-    </div>
-</a>
-</li>
 
             </ul>
             </div>
@@ -495,15 +455,15 @@
 
         <div class="subscribe">
             <form action="rooms.html" class="form__subscribe" name="subscribe-form" >
-                  <!-- <p class="footer__text">подпишитесь на рассылку</p> -->
+                  <p class="footer__text">отримувати новини</p>
                   <div class="subscribe__row">
-                    <!-- <label>
+                    <label>
                         <input type="email" 
                         name="email" id="subscribe-email" 
                         class="subscribe__email" 
                         placeholder="Email"/>
-                      </label> -->
-                      <button class="button__send">Переглянути всі номери
+                      </label>
+                      <button class="button__send">Слідкувати
                     </button>
                   </div>
                 </form>
@@ -555,7 +515,7 @@
 </div>
 </div>
 
-<!-- <div class="modal__backdrop is-hidden" data-modal>
+<div class="modal__backdrop is-hidden" data-modal>
     <div class="modal" data-form-modal>
     <button type="button" class="button__modal" data-modal-close>
         <svg class="icon__close"> 
@@ -611,9 +571,9 @@
             <button type="submit" class="modal-button__btn">Отправить</button>
     </form>
     </div>
-</div> -->
+</div>
 
-<!-- <script src="./js/modal.js"></script> -->
+<script src="./js/modal.js"></script>
 
 <script src="./js/menu.js"></script>
 <script src="https://sbj.rkz.io/servio-booking.js?module_id=94&lang=ru"></script>
